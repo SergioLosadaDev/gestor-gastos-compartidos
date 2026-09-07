@@ -4,6 +4,13 @@
 
 ---
 
+## Desarrolladores
+
+1. Alex David Salgado Trujillo
+2. Sergio Andres Losada Bahamon
+
+---
+
 ## Descripcion
 
 > En muchas familias o grupos comunitarios (roommates, junta de acción comunal, grupo de amigos que viven juntos) los gastos compartidos —arriendo, mercado, servicios públicos— se anotan en papel o en chats de WhatsApp, lo que genera confusión sobre quién ha pagado, cuánto debe cada persona y si las cuentas están saldadas. Se necesita una aplicación sencilla donde cualquier miembro registre un gasto, indique quién lo pagó y entre quiénes se divide, y que calcule automáticamente los saldos (quién le debe a quién), evitando discusiones y facilitando la transparencia del grupo.
@@ -60,4 +67,5 @@ streamlit run app.py
 
 ## URL App
 
-[Abrir la App](https://gestor-gastos-compartidos-ii9jwzcfib6t8ppykav8ux.streamlit.app/)
+> - [Repositorio Github](https://github.com/SergioLosadaDev/gestor-gastos-compartidos.git)
+> - [Abrir la App Streamlit](https://gestor-gastos-compartidos-ii9jwzcfib6t8ppykav8ux.streamlit.app/)
