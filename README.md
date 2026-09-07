@@ -1,4 +1,8 @@
-# App: Gestor de gastos compartidos
+# Gestor de gastos compartidos
+
+> Aplicación para registrar, dividir y consultar gastos compartidos.
+
+---
 
 ## Descripcion
 
@@ -6,24 +10,26 @@
 
 ## Stakeholders
 
-> - Usuario: miembros de un hogar o grupo comunitario que comparten gastos.
-> - Tarea/decisión que se mejora: decidir y verificar cuánto debe pagar cada persona en un momento dado, sin depender de cálculos manuales.
+> - **Usuario:** miembros de un hogar o grupo comunitario que comparten gastos.
+> - **Tarea/decisión que se mejora:** decidir y verificar cuánto debe pagar cada persona en un momento dado, sin depender de cálculos manuales.
 
 ## Requisitos del sistema
 
 ### Funcionales
 
-- RF1 — El sistema debe permitir registrar miembros del grupo (nombre).
-- RF2 — El sistema debe permitir registrar un gasto con: monto, descripción, categoría, fecha, quién pagó y entre quiénes se divide.
-- RF3 — El sistema debe calcular automáticamente el saldo neto de cada miembro (cuánto le deben o cuánto debe).
-- RF4 — El sistema debe mostrar el historial de gastos, con filtro por miembro, categoría o rango de fechas.
-- RF5 — El sistema debe permitir editar o eliminar un gasto registrado.
+- **RF1** — El sistema debe permitir registrar miembros del grupo (nombre).
+- **RF2** — El sistema debe permitir registrar un gasto con: monto, descripción, categoría, fecha, quién pagó y entre quiénes se divide.
+- **RF3** — El sistema debe calcular automáticamente el saldo neto de cada miembro (cuánto le deben o cuánto debe).
+- **RF4** — El sistema debe mostrar el historial de gastos, con filtro por miembro, categoría o rango de fechas.
+- **RF5** — El sistema debe permitir editar o eliminar un gasto registrado.
 
 ### No Funcionales
 
-- RNF1 — Usabilidad: interfaz en español, clara e intuitiva, usable sin entrenamiento previo (menú lateral con máximo 4 secciones).
-- RNF2 — Persistencia: los datos deben conservarse entre sesiones, almacenados en una base de datos local SQLite (no se pierden al cerrar la app).
-- RNF3 — Rendimiento: las operaciones de consulta y cálculo de saldos deben responder en menos de 2 segundos con hasta 1000 registros.
+- **RNF1** — Usabilidad: interfaz en español, clara e intuitiva, usable sin entrenamiento previo (menú lateral con máximo 4 secciones).
+- **RNF2** — Persistencia: los datos deben conservarse entre sesiones, almacenados en una base de datos local SQLite (no se pierden al cerrar la app).
+- **RNF3** — Rendimiento: las operaciones de consulta y cálculo de saldos deben responder en menos de 2 segundos con hasta 1000 registros.
+
+---
 
 ## Prompt para generar la App
 
@@ -42,12 +48,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Se abrirá en `http://localhost:8501`. La primera vez se crea automáticamente
-el archivo `gastos.db` (persistencia SQLite).
+> Se abrirá en `http://localhost:8501`. La primera vez se crea automáticamente
+> el archivo `gastos.db` (persistencia SQLite).
 
 ### Desplegar en Streamlit Community Cloud (gratis)
 
-1. Entra a https://share.streamlit.io con tu cuenta de GitHub.
+1. Entra a [Streamlit Community Cloud](https://share.streamlit.io) con tu cuenta de GitHub.
 2. Clic en "New app".
 3. Selecciona el repositorio, la rama `main` y el archivo `app.py`.
 4. Clic en "Deploy". En 1–2 minutos tendrás una URL pública para compartir.
+
+## URL App
+
+[Abrir la App](https://gestor-gastos-compartidos-ii9jwzcfib6t8ppykav8ux.streamlit.app/)
