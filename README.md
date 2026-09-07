@@ -32,3 +32,22 @@
 ## Persitencia de datos
 
 > La persistencia de datos en el proyecto se implementa mediante SQLite, una base de datos relacional embebida que se almacena en un único archivo local (gastos.db). Al iniciar la aplicación, esta crea automáticamente las tablas miembros y gastos si no existen, mediante la función init_db(). Cada operación del usuario (registrar un miembro, agregar un gasto, editarlo o eliminarlo) se ejecuta directamente sobre la base de datos a través de consultas SQL (INSERT, DELETE, SELECT), por lo que la información queda almacenada de forma permanente en disco y no depende de la memoria de la sesión. Esto garantiza que los datos se conserven íntegros incluso después de cerrar la aplicación, reiniciar el equipo o volver a ejecutar el programa en otro momento.
+
+## Ejecucion
+
+### Ejecutar en local
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Se abrirá en `http://localhost:8501`. La primera vez se crea automáticamente
+el archivo `gastos.db` (persistencia SQLite).
+
+### Desplegar en Streamlit Community Cloud (gratis)
+
+1. Entra a https://share.streamlit.io con tu cuenta de GitHub.
+2. Clic en "New app".
+3. Selecciona el repositorio, la rama `main` y el archivo `app.py`.
+4. Clic en "Deploy". En 1–2 minutos tendrás una URL pública para compartir.
